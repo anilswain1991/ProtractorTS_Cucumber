@@ -1,0 +1,925 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Marketplace (Shopping and Profile update)",
+    "line": 1,
+    "id": "marketplace-(shopping-and-profile-update)",
+    "tags": [],
+    "uri": "features\\odoo_smoke.feature",
+    "elements": [
+      {
+        "id": "marketplace-(shopping-and-profile-update);verify-login-to-odoo-ecommerce-portal",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Verify login to odoo ecommerce portal",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinitions\\hooks.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "user launches url \"https://customer1.test-marketplace.compucom.com/b2b/login\"",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27356000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "user enters email as \"anil.k.swain1991@gmail.com\"",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 756000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "user clicks on Next",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 193000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "user enters password as \"user\"",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6536000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "user clicks on Login",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:60"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18429000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "user lands on portal dashboard page and verifies account as \"Anil EU Swain\"",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2095000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinitions\\hooks.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "marketplace-(shopping-and-profile-update);user-adds-a-product-to-cart",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "User adds a product to cart",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 18
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinitions\\hooks.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "user clicks on shop tab",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:80"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37108000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "user selects QA Full Catalog",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:91"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 167000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "user searches for \"Apple HomePod - smart speaker\" in search bar",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:128"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15680000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "user adds it to the cart",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:141"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15527000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinitions\\hooks.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "marketplace-(shopping-and-profile-update);user-removes-the-product-from-the-cart",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "User removes the product from the cart",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 31
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinitions\\hooks.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 34,
+            "name": "user is on \"Cart\" page",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:155"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 55000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "user clicks on Remove button to empty the cart",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:166"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23488000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "user clicks on home button to land on odoo Dashboard",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:174"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16966000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinitions\\hooks.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "marketplace-(shopping-and-profile-update);user-adds-a-product-to-wishlist",
+        "keyword": "Scenario",
+        "line": 43,
+        "name": "User adds a product to wishlist",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 42
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinitions\\hooks.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 45,
+            "name": "user clicks on shop tab",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:80"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18721000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 46,
+            "name": "user selects QA Full Catalog",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:91"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 113000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 47,
+            "name": "user searches for \"Apple iPad Air 2(Wi-Fi + Cellular) Gold\" in search bar",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:128"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16173000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 48,
+            "name": "user adds it to the Wishlist",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:185"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3338000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinitions\\hooks.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "marketplace-(shopping-and-profile-update);user-removes-a-product-from-wishlist",
+        "keyword": "Scenario",
+        "line": 55,
+        "name": "User removes a product from wishlist",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 54
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinitions\\hooks.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 57,
+            "name": "user lands on \"My Wishlist\" page",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:198"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3823000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 58,
+            "name": "user clicks on Remove button to remove the product",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:212"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2250000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 59,
+            "name": "user clicks on home button to land on odoo Dashboard",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:174"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3316000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinitions\\hooks.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "marketplace-(shopping-and-profile-update);user-searches-products-using-filters",
+        "keyword": "Scenario",
+        "line": 66,
+        "name": "User searches products using filters",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 65
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinitions\\hooks.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 68,
+            "name": "user clicks on shop tab",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:80"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7249000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 69,
+            "name": "user selects QA Full Catalog",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:91"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 79000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 70,
+            "name": "user puts the filters on  brands like Apple and Lenovo",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:224"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18499000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 71,
+            "name": "user should be able to see all the products of Lenovo like \"Lenovo - earphones with mic\"",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:238"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 357000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinitions\\hooks.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "marketplace-(shopping-and-profile-update);user-updates-name-and-current-address-and-reverts-to-original-details",
+        "keyword": "Scenario",
+        "line": 89,
+        "name": "User updates name and current Address and reverts to original details",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 77
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinitions\\hooks.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 80,
+            "name": "user clicks on account",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:253"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 416000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 81,
+            "name": "user clicks on My account from dropdown",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:259"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5276000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 82,
+            "name": "user lands on my Profile page and clicks on edit details icon",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:265"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5320000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 83,
+            "name": "user updates name as \"Anil Kumar Swain\" and email as \"anil.k.swain03@gmail.com\" and address as \"13th floor, Tower B, EON Free Zone II (SEZ), Survey no. 72, Hissa no. 2/1\"",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:273"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10661000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 84,
+            "name": "user saves the changes",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:291"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4388000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinitions\\hooks.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "marketplace-(shopping-and-profile-update);user-updates-name-and-current-address-and-reverts-to-original-details",
+        "keyword": "Scenario",
+        "line": 90,
+        "name": "User updates name and current Address and reverts to original details",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 77
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinitions\\hooks.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 80,
+            "name": "user clicks on account",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:253"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 191000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 81,
+            "name": "user clicks on My account from dropdown",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:259"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4521000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 82,
+            "name": "user lands on my Profile page and clicks on edit details icon",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:265"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4090000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 83,
+            "name": "user updates name as \"Anil EU Swain\" and email as \"anil.k.swain1991@gmail.com\" and address as \"Flat no - A/303, Ratan Prestige, Kharadi\"",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:273"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9935000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 84,
+            "name": "user saves the changes",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:291"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15161000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinitions\\hooks.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "marketplace-(shopping-and-profile-update);user-logs-out-of-the-application",
+        "keyword": "Scenario",
+        "line": 98,
+        "name": "User logs out of the application",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 97
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinitions\\hooks.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 100,
+            "name": "user clicks on account",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:253"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 192000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 101,
+            "name": "user clicks on Log out",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:301"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12818000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 102,
+            "name": "user is able to log out of the application",
+            "match": {
+              "location": "stepDefinitions\\steps.ts:312"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 196000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "stepDefinitions\\hooks.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
